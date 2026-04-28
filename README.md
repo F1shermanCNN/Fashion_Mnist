@@ -21,6 +21,7 @@ python -m training.complete_training
 ```
 #4. 测试脚本
 本项目中可以通过testing.test_input_params.py文件进行参数测试，首先下载好最优参数到根目录，本项目附带了best_params_1.npz，可以自行更改，将路径改为下载好的参数文件的路径，随后根据文件形式修改隐藏层大小等超参数。
+本项目最终结果的权重下载地址如下：https://drive.google.com/file/d/13FOLlM0JEHFC1zs2nu4_Vmw3qrRW3y33/view?usp=sharing
 可以返回在测试集上的准确率以及混淆矩阵
 调整后在根目录运行
 ```bash
