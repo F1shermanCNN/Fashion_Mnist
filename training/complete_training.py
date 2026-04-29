@@ -18,7 +18,7 @@ param_list = [
     {'lr': 0.1, 'hidden_dim1': 512, 'hidden_dim2': 128, 'weight_decay': 1e-5}
 ]
 
-epochs = 5
+epochs = 200
 batch_size = 64
 all_results = []
 
@@ -57,7 +57,7 @@ for i, params in enumerate(param_list, 1):
     
     # 保存训练结果
     np.savez(
-        f"best_params_{i}.npz",
+        f"new_best_params_{i}.npz",
         fc1_W=best_params["fc1_W"], fc1_b=best_params["fc1_b"],
         fc2_W=best_params["fc2_W"], fc2_b=best_params["fc2_b"],
         fc3_W=best_params["fc3_W"], fc3_b=best_params["fc3_b"]
